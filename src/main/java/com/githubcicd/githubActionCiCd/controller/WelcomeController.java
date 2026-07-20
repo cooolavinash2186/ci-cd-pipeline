@@ -16,7 +16,7 @@ public class WelcomeController {
         return ResponseEntity.ok("Welcome to spring boot app");
     }
 
-    @GetMapping
+    @GetMapping("/users")
     ResponseEntity<Map<String,Object>> getUser(){
         return  ResponseEntity.ok(Map.of("name","Ci cd automated succufully of ","aws",true));
     }
