@@ -25,7 +25,7 @@ public class WelcomeController {
     @GetMapping("/evn")
     public Integer evenNumbers() {
 
-        int num = 1223465;
+        int num = 12234865;
         int sum = 0;
         while( num > 0){
             int ld = num % 10 ;
