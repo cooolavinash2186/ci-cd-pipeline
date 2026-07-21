@@ -18,6 +18,28 @@ public class WelcomeController {
 
     @GetMapping("/users")
     ResponseEntity<Map<String,Object>> getUser(){
+
         return  ResponseEntity.ok(Map.of("name","Ci cd automated succufully of ","aws",true));
     }
+
+    @GetMapping("/evn")
+    public int evenNumbers() {
+
+        int num = 122345;
+        int sum = 0;
+        while( num > 0){
+            int ld = num % 10 ;
+            if(ld % 2 == 0)
+            {
+                sum = sum + ld ;
+            }
+            num = num / 10;
+        }
+
+        return sum;
+
+    }
+
+
+
 }
