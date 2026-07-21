@@ -23,7 +23,7 @@ public class WelcomeController {
     }
 
     @GetMapping("/evn")
-    public int evenNumbers() {
+    public Integer evenNumbers() {
 
         int num = 122345;
         int sum = 0;
